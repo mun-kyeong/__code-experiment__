@@ -1,13 +1,12 @@
 import { useState } from "react";
+import { Test01 } from "./test-01-label/test";
 
-function App() {
+export function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>React Shopping Products</h1>
+      <Test01 />
     </>
   );
 }
-
-export default App;
