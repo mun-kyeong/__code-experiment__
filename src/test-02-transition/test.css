@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 1px dashed #ccc;
+  margin-top: 20px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  position: absolute;
+}
+
+/* -----------------------------
+   1) top/left 애니메이션
+------------------------------ */
+.topLeft {
+  background: #ff6b6b;
+  top: 50px;
+  left: 50px;
+  animation: moveTopLeft 2s infinite alternate linear;
+}
+
+@keyframes moveTopLeft {
+  from {
+    left: 50px;
+  }
+  to {
+    left: 350px;
+  }
+}
+
+/* -----------------------------
+   2) transform 애니메이션
+------------------------------ */
+.transformBox {
+  background: #4dabf7;
+  top: 50px;
+  left: 50px;
+  animation: moveTransform 2s infinite alternate linear;
+}
+
+@keyframes moveTransform {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
